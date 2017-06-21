@@ -9,8 +9,8 @@ import { Cat } from "../shared/cat";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  private cats: Cat[];
-  private loadingList: boolean = false;
+  cats: Cat[];
+  loadingList: boolean = false;
 
   constructor(private catService: CatService) { }
 

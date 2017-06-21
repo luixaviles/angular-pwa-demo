@@ -4,20 +4,16 @@ import { NgModule } from '@angular/core';
 import { HttpModule,JsonpModule } from '@angular/http';
 import { MdToolbarModule,
          MdIconModule,
-         MdButtonModule,
-         MdCardModule,
-         MdProgressBarModule } from "@angular/material";
+         MdButtonModule
+        } from "@angular/material";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CatService } from './shared/cat.service';
-import { HomeComponent } from './home/home.component';
-import { AboutModule } from './about/about.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -27,10 +23,7 @@ import { AboutModule } from './about/about.module';
     MdToolbarModule,
     MdIconModule,
     MdButtonModule,
-    MdCardModule,
-    MdProgressBarModule,
-    AppRoutingModule,
-    AboutModule
+    AppRoutingModule
   ],
   providers: [CatService],
   bootstrap: [AppComponent]
