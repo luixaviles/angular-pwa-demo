@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "serve-build": "ng build --prod && http-server dist"
+    "serve-dist": "ng build --prod && http-server dist -o"
   },
   "private": true,
   "dependencies": {
