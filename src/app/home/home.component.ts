@@ -23,8 +23,9 @@ export class HomeComponent implements OnInit {
     this.catService.getCats()
       .subscribe((cats) => {
         this.cats = cats;
-      }, () => { },
-      () => {
+      }, (error) => {
+        console.log(error);
+      }, () => {
         this.loadingList = false;
       });
   }
