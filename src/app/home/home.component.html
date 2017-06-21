@@ -1,0 +1,14 @@
+<div class="card-container">
+  <md-card *ngFor="let cat of cats">
+    <md-card-header>
+      <div md-card-avatar class="example-header-image"
+           [style.background]="getPictureURL(cat.photos[0].alt_sizes[6].url)"
+           [style.background-size]="'cover'"></div>
+      <md-card-title>
+        {{cat.post_author}}
+      </md-card-title>
+      <md-card-subtitle>{{cat.blog_name}}</md-card-subtitle>
+    </md-card-header>
+    <img md-card-image src="{{cat.photos[0].alt_sizes[4].url}}">
+  </md-card>
+</div>

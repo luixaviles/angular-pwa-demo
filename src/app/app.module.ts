@@ -2,15 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
 import { HttpModule,JsonpModule } from '@angular/http';
-import { MdToolbarModule, MdIconModule, MdButtonModule } from "@angular/material";
+import { MdToolbarModule,
+         MdIconModule,
+         MdButtonModule,
+         MdCardModule } from "@angular/material";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CatService } from './shared/cat.service';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +25,7 @@ import { CatService } from './shared/cat.service';
     MdToolbarModule,
     MdIconModule,
     MdButtonModule,
+    MdCardModule,
     AppRoutingModule
   ],
   providers: [CatService],

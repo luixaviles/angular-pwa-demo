@@ -7,7 +7,7 @@ import { Cat } from "./cat";
 
 @Injectable()
 export class CatService {
-  private CATS_URL = 'https://api.tumblr.com/v2/blog/fuckyeahcats.tumblr.com/posts/photo?api_key=z46iUTiovIf3N5KdioKhU2vvTBMWRHA8KLeIBruDnEHTXpiK8n&&callback=JSONP_CALLBACK&limit=20&offset=20';
+  private CATS_URL = 'https://api.tumblr.com/v2/blog/fuckyeahcats.tumblr.com/posts/photo?api_key=z46iUTiovIf3N5KdioKhU2vvTBMWRHA8KLeIBruDnEHTXpiK8n&&callback=JSONP_CALLBACK&limit=20&offset=80';
 
   constructor(private http: Http, private jsonp: Jsonp) { }
 
@@ -19,7 +19,6 @@ export class CatService {
 
   private extractData(res: Response) {
     let body = res.json();
-    console.log('body', body);
     return body.response.posts || {};
   }
 
