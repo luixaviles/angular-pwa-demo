@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CatService } from './shared/cat.service';
 import { HomeComponent } from './home/home.component';
+import { AboutModule } from './about/about.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HomeComponent } from './home/home.component';
     MdIconModule,
     MdButtonModule,
     MdCardModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AboutModule
   ],
   providers: [CatService],
   bootstrap: [AppComponent]
