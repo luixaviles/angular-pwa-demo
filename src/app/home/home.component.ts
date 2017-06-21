@@ -9,8 +9,8 @@ import { Cat } from "../shared/cat";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
   private cats: Cat[];
+  private loadingList: boolean = false;
 
   constructor(private catService: CatService) { }
 
@@ -19,10 +19,15 @@ export class HomeComponent implements OnInit {
   }
 
   private loadCats(): void {
-    this.catService.getCats().subscribe((cats) => {
-      console.log('Using cats', cats);
-      this.cats = cats;
-    });
+    this.loadingList = true;
+    this.catService.getCats()
+      .subscribe((cats) => {
+        console.log('Using cats', cats);
+        this.cats = cats;
+      }, () => { },
+      () => {
+        this.loadingList = false;
+      });
   }
 
   private getPictureURL(location: string): string {

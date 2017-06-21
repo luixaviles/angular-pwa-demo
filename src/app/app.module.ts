@@ -5,7 +5,8 @@ import { HttpModule,JsonpModule } from '@angular/http';
 import { MdToolbarModule,
          MdIconModule,
          MdButtonModule,
-         MdCardModule } from "@angular/material";
+         MdCardModule,
+         MdProgressBarModule } from "@angular/material";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +28,7 @@ import { AboutModule } from './about/about.module';
     MdIconModule,
     MdButtonModule,
     MdCardModule,
+    MdProgressBarModule,
     AppRoutingModule,
     AboutModule
   ],

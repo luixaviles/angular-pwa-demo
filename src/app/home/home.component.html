@@ -1,4 +1,6 @@
-<div class="card-container">
+<md-progress-bar *ngIf="loadingList" mode="query" color="primary"></md-progress-bar>
+
+<div *ngIf="!loadingList" class="card-container">
   <md-card *ngFor="let cat of cats">
     <md-card-header>
       <div md-card-avatar class="example-header-image"
