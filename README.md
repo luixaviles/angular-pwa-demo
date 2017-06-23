@@ -1,6 +1,10 @@
-# AngularPwaDemo
+# Progressive Cats Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
+This is a Progressive Web Application that display a list of Cats. It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
+
+## Demo
+
+Please don't miss the [Online Demo](https://fir-test1-490ea.firebaseapp.com/)
 
 ## Development server
 
