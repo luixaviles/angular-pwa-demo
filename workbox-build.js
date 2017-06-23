@@ -5,6 +5,7 @@ swBuild.generateSW({
     globDirectory: './dist',
     globPatterns: [
         'index.html',
+        'assets/images/icons/**.png',
         '**.js',
         '**.css'
     ],
